@@ -169,7 +169,7 @@ def Algo(matrix: Matrix, horse: Horse):
     matrix.visited[horse.i][horse.j] = True
     while cnt < 64:
         pygame.event.pump()
-        clock.tick(2)
+        clock.tick(3)
         # pygame.time.wait(500)
         ds = Horse.listAblemove(horse.i, horse.j, matrix)
         random.shuffle(ds)
